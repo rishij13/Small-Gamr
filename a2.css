@@ -1,0 +1,14 @@
+.webchat-security-key-form{
+    width: 298px;
+    height: auto;
+    border: 0;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+}
+
+.input-group-lg > .input-group-btn > .btn{
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
