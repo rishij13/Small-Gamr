@@ -12,13 +12,11 @@
     height: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: red;
 }
 
 /* height of input box*/
 .input-group-lg .form-control{
     height: 35px;
-    background-color: pink;
 }
 
 .input-group-lg .form-control, .input-group-lg .input-group-btn .btn{
