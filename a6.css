@@ -1,0 +1,25 @@
+.webchat-security-key-form{
+    width: 298px;
+    height: auto;
+    border: 0;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* height and padding of share screen button*/
+.input-group-lg .input-group-btn .btn{
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* height of input box*/
+.input-group-lg .form-control{
+    height: 35px;
+}
+
+.input-group-lg .form-control, .input-group-lg .input-group-btn .btn{
+    font-family: 'FS Elliot Web Regular';
+    font-size: 16px;
+}
