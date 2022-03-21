@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+	<Appenders>
+	
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MMM-dd HH:mm:ss a} %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<RollingFile name="rollingFile"
+			fileName="C:/Users/Rishi/mvn_tut/logcheck/logs/appp.log"
+			filePattern="C:/Users/Rishi/mvn_tut/logcheck/logs/appp-%d{yyyy-MM-dd-HH-mm}-%i.log">
+			
+			<PatternLayout>
+				<Pattern>%d{yyyy-MM-dd-HH:mm:ss a} %-5p %m%n</Pattern>
+			</PatternLayout>
+			
+			<Policies>
+				<SizeBasedTriggeringPolicy size="2KB" />
+			</Policies>
+
+			<DefaultRolloverStrategy max="2">
+				<Delete basePath="C:/Users/Rishi/mvn_tut/logcheck/logs">
+					<IfAccumulatedFileCount exceeds="3" />
+				</Delete>
+			</DefaultRolloverStrategy>
+
+		</RollingFile>
+		
+	</Appenders>
+	
+	<Loggers>
+	
+		<Logger name="com.rishi" level="debug" additivity="false">
+			<AppenderRef ref="rollingFile" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		
+		<Root level="info">
+			<AppenderRef ref="Console" />
+		</Root>
+		
+	</Loggers>
+</Configuration>
